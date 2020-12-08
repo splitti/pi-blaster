@@ -238,11 +238,6 @@ You might need to create and edit this file manually. Example of file content:
 DAEMON_OPTS="--gpio 19,13,5"
 ```
 
-## A practical example: high-power RGB lighting
-
-This library was developed for TBideas high power LED driver. You can read more
-about this project on [our blog][blog].
-
 ## Contributors
 
 * Richard Hirst for [ServoBlaster](https://github.com/richardghirst/PiBits)
