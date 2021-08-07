@@ -513,7 +513,7 @@ static void compact_pin2gpio() {
     }
   }
   // Set the remaining slots in the arrays to 0, to disable them
-  for (i = j; j < num_channels; j++) {
+  for (i = j; i < num_channels; i++) {
     tmp_pin2gpio[i] = 0;
     tmp_channel_pwm[i] = 0;
   }
