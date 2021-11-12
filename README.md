@@ -150,6 +150,10 @@ Volcini](https://plus.google.com/109312219443477679717/posts). It is available
 on [this stackoverflow
 thread](http://stackoverflow.com/questions/17241071/writing-to-fifo-file-linux-monoc).
 
+## How to use from other languages?
+
+All you need to know is how to open a file and write into it. Here are some more examples contributed by the community:
+
 ### Java
 ```java
 void echoToFile(String str) throws FileNotFoundException {
@@ -157,6 +161,30 @@ void echoToFile(String str) throws FileNotFoundException {
     try (PrintWriter out = new PrintWriter(new FileOutputStream(file), true)) {
         out.println(str);
     }
+}
+```
+
+### Python
+
+```python
+def echo_to_file(st: str):
+    original_stdout = sys.stdout
+    with open('/dev/pi-blaster', 'w') as f:
+        sys.stdout = f  # Change the standard output to the file we created.
+        print(st)
+        sys.stdout = original_stdout  # Reset the standard output to its original value
+```
+
+### C++
+
+
+```cpp
+void EchoToFile(string val)
+{
+    ofstream fo;
+    fo.open("/dev/pi-blaster");
+    fo << val << endl;
+    fo.close();
 }
 ```
 
@@ -254,6 +282,8 @@ DAEMON_OPTS="--gpio 19,13,5"
 * Pavle Petrovic (https://github.com/pavlecc)
 * arendruni (https://github.com/arendruni)
 * Lucas Servén Marín (https://github.com/squat)
+* Airat (https://github.com/CrackAndDie)
+
 
 ## Want to support this project?
 
