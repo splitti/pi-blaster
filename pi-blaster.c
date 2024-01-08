@@ -32,7 +32,7 @@
 
 #define _POSIX_C_SOURCE 200809L
 #define _XOPEN_SOURCE   700
-#define _BSD_SOURCE
+#define _DEFAULT_SOURCE
 
 #ifdef HAVE_CONFIG_H
 #include "config.h"
