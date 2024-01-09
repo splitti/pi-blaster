@@ -47,7 +47,7 @@ Raspberry Pi, or cross-compilation.
 You may need to install `autoconf` to build. On Raspbian and other Debian based
 systems this can be achieved with:
 
-    sudo apt-get install autoconf
+    sudo apt-get install autoconf pkg-config
 
 Get the git package:
 
