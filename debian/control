@@ -9,7 +9,7 @@ Vcs-Git: https://github.com/sarfata/pi-blaster.git
 Vcs-Browser: https://github.com/sarfata/pi-blaster
 
 Package: pi-blaster
-Architecture: armhf armel
+Architecture: arm64 armhf armel
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Daemon for PWM control of the Raspberry Pi GPIO pins
  This tool will turn the given GPIO pins into outputs and
