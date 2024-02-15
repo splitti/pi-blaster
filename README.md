@@ -31,8 +31,7 @@ you are currently running.
 
 Install the debian tools required to compile and prepare the package:
 
-    sudo apt-get install debhelper dh-autoreconf dh-systemd dpkg-dev \
-      init-system-helpers autoconf
+    sudo apt-get install debhelper dh-autoreconf dpkg-dev init-system-helpers autoconf dh-virtualenv
 
 And build the package:
 
@@ -283,6 +282,7 @@ DAEMON_OPTS="--gpio 19,13,5"
 * arendruni (https://github.com/arendruni)
 * Lucas Servén Marín (https://github.com/squat)
 * Airat (https://github.com/CrackAndDie)
+* Olaf Splitt (https://github.com/splitti)
 
 
 ## Want to support this project?
